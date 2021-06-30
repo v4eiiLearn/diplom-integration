@@ -1,0 +1,13 @@
+mock:
+  base-url: http://localhost:8079
+service:
+  orchestrator:
+    base-url: http://localhost:8080/engine-rest
+    lock-duration: 60s
+    async-response-timeout: 10s
+  app:
+    base-url: http://localhost:8081
+    connection-timeout: 15s
+    read-timeout: 15s
+server:
+  port: 8082

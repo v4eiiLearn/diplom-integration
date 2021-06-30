@@ -1,0 +1,13 @@
+mock:
+  base-url: ${D_MOCK_HOST}
+service:
+  orchestrator:
+    base-url: ${D_ORCHESTRATOR_HOST}/engine-rest
+    lock-duration: ${EXT_TASK_LOCK_DURATION}
+    async-response-timeout: ${EXT_TASK_ASYNC_RESPONSE_TIMEOUT}
+  app:
+    base-url: ${D_APP_HOST}
+    connection-timeout: ${D_CONNECTION_TIMEOUT}
+    read-timeout: ${D_READ_TIMEOUT}
+server:
+  port: ${TOMCAT_PORT}
